@@ -1,0 +1,134 @@
+body{
+    font-family: 'Poppins', 'sans-serif'; 
+    background-color: hsl(0, 0%, 97%);
+    position: relative;
+}
+
+
+p {  margin: 0;
+     color:   hsl(229, 6%, 66%); 
+  } 
+
+h1,h2{
+      color: hsl(234, 12%, 34%);
+      
+}
+.img{
+   
+   margin-top: 20%;
+    margin-left: 75%;
+}
+
+.flex-container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   
+}
+
+.first-card{
+   
+     margin-top: 50px;  
+     line-height: 1rem;
+     text-align: center;
+}
+.reliable{
+   
+    
+    color: hsl(234,12%, 34%);
+    /* font-weight: 200; */
+    font-size: 2rem;
+    font-weight: var(--fw-200);
+}
+.second-card{
+    max-width: 450px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.grid-container{
+     margin-top: 50px;
+   
+     display: grid;
+     grid-template-rows: 115px 115px 115px 115px;
+     grid-template-columns: 380px 380px 380px;
+     justify-content: center;
+     gap: 30px;
+    
+}
+.supervisor{
+     
+     border-top: 5px solid;
+     border-top-color:  hsl(180, 62%, 55%);
+     background-color: white;
+     grid-row-start: 2;
+     grid-row-end: 4;
+
+}
+.heading{
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 3%;
+}
+.heading-para{
+   margin-left: 30px;
+   margin-top: 5px;
+
+}
+.team{
+     border-top: 5px solid;
+     border-top-color:   hsl(0, 78%, 62%);
+     background-color:  hsl(0, 0%, 98%);
+     grid-column-start:2;
+     grid-column-end: 3;
+     grid-row-start: 1;
+     grid-row-end: 3;
+}
+.karma{
+    border-top: 5px solid;
+    border-top-color:  hsl(34, 97%, 64%);
+    background-color:   hsl(0, 0%, 98%);
+    grid-column-start:2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+.calculator{
+    border-top: 5px solid;
+    border-top-color:  hsl(212, 86%, 64%);
+    background-color:  hsl(0, 0%, 98%);
+    grid-column-start:3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+
+
+@media screen and (max-width: 1200px){
+      .first-card{
+          margin-top: 50px;
+          line-height: 2rem;
+      }
+      .second-card{
+        max-width: 350px;
+      }
+      .grid-container{
+        /* grid-template-rows: 115px 115px 115px 115px; */
+        display: block;
+        
+
+      }
+      .grid-container.selected{
+          display: flex;
+          flex-direction: column;
+          gap: 25px;
+      }
+
+     
+  }
+
+  @media screen and(max-width: 1200px){
+     
+
+  }
